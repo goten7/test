@@ -8,7 +8,9 @@
     <version>1.0.0-test</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
-  <artifactId>file-service</artifactId>
+  <artifactId>iot-service</artifactId>
+  <name>iot服务</name>
+  <description>iot-d</description>
   <dependencies>
     <dependency>
       <groupId>org.jetlinks.pro</groupId>
@@ -19,29 +21,13 @@
       <artifactId>microservice-autoconfigure</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.jetlinks.pro</groupId>
-      <artifactId>io-component</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-r2dbc</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.github.ben-manes.caffeine</groupId>
-      <artifactId>caffeine</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.hswebframework.web</groupId>
-      <artifactId>hsweb-authorization-basic</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.synchronoss.cloud</groupId>
-      <artifactId>nio-multipart-parser</artifactId>
-      <version>1.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hswebframework.web</groupId>
-      <artifactId>hsweb-system-file</artifactId>
+      <groupId>org.jetlinks.pro</groupId>
+      <artifactId>authentication-manager</artifactId>
+      <version>${jetlinks.pro.version}</version>
     </dependency>
   </dependencies>
   <build>
@@ -62,6 +48,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.7.18</version>
         <executions>
           <execution>
             <goals>
@@ -70,7 +57,7 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>org.jetlinks.project.file.FileApplication</mainClass>
+          <mainClass>org.jetlinks.cloud.IotApplication</mainClass>
           <layout>ZIP</layout>
           <layers>
             <enabled>true</enabled>

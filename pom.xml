@@ -2,11 +2,11 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jetlinks.project</groupId>
-  <artifactId>jetlinks-project-template</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <groupId>org.jetlinks.test</groupId>
+  <artifactId>jetlinks-test-template</artifactId>
+  <version>1.0.0-test</version>
   <packaging>pom</packaging>
-  <name>name_c26a10cf2dc7</name>
+  <name>test123</name>
   <properties>
     <java.version>1.8</java.version>
     <project.build.jdk>${java.version}</project.build.jdk>
@@ -171,6 +171,7 @@
         <module>micro-services/api-gateway-service</module>
         <module>micro-services/authentication-service</module>
         <module>micro-services/file-service</module>
+        <module>micro-services/iot-service</module>
       </modules>
     </profile>
   </profiles>
